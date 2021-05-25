@@ -1,40 +1,39 @@
 <!doctype html>
 <html>
 <head>
- <title> 피즈스킬분석 </title>
- <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
+  <title> 피즈스킬분석 </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="Color.js"> </script>
 </head>
 
 <body>
 
-  <h1><a href="https://woo-in.github.io/fizz/index.html">피즈 스킬 분석</a></h1>
-  <div id="grid">
 
+  <h1><a href="https://woo-in.github.io/fizz/index.html"id="title1">피즈 스킬 분석 ! ! !</a></h1>
+
+
+  <div id="grid">
     <ul>
-      <li><u><a href="https://woo-in.github.io/fizz/1.html"class="ed">P - 영리한 싸움꾼(Nimble Fighter)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/2.html"id="now">Q - 성게 찌르기(Urchin Strike)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/3.html">W - 심해석 삼지창(Seastone Trident)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/4.html">E - 장난치기(Playful)/재간둥이(Trickster)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/5.html">R - 미끼 뿌리기(Chum the waters)</a></u></li>
+      <li><a href="https://woo-in.github.io/fizz/1.html"class="notnow">P - 영리한 싸움꾼(Nimble Fighter)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/2.html"id="now">Q - 성게 찌르기(Urchin Strike)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/3.html"class="notnow">W - 심해석 삼지창(Seastone Trident)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/4.html"class="notnow">E - 장난치기(Playful)/재간둥이(Trickster)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/5.html"class="notnow">R - 미끼 뿌리기(Chum the waters)</a></li>
+      <input type="button" value="night" onclick="NightDayHander(this)">
     </ul>
 
 
+  <div id="main">
+    <h2>P - 영리한 싸움꾼(Nimble Fighter)</h2>
+    <img src="fizzp.png">
+    <p>두 가지 효과를 지닌 패시브다.</p>
+    <p> <strong> 첫 번째 효과는 충돌 무시 항시 지속이다.</strong> 덕분에 미니언들이 길을 막아서 적의 추격을 피하지 못하게 되거나 반대로 적 추격을 실패하게 될 일은 없고, 미니언을 방패로 이용하여 논타겟 스킬을 피하기도 매우 수월하다.</p>
 
-<div id="main">
-<h2>Q - 성게 찌르기(Urchin Strike)</h2>
-<img src="fizzq.png">
-<p><strong>타겟팅형 돌진기. 무조건 최대 사거리까지 뛰어든다. 반드시 최대 사거리까지만 가기 때문에 Q가 찍힌 대상이 점멸 등의 탈출기를 사용해 멀어진다고 하더라도 피즈는 이를 따라가지 않고 최대 사거리까지만 이동한다.</strong></p>
-<p> 자체 성능은 매우 저열한 편. 유일하게 좋은 능력치는 짧은 쿨타임 뿐이다. 일단 피해량은 추가로 붙는 1.0 총 공격력을 고려해도 성장치가 지나치게 낮고, 계수도 높지 않으며, 사거리도 매우 짧은데, 적에게만 사용이 가능해서 제한적이면서, 정작 판정은 반 논타겟이라서 대미지를 피하는 것이 가능한 몇 안 되는 돌진기이다.</p>
+    <p><strong>두 번째 효과는 고정 피해를 제외한 모든 피해 유형에 대해 피즈가 감소된 피해를 입는 것이다.</strong> 이 효과는 상대가 입히는 피해량이 피즈의 방어력이나 마법 저항력으로 감소되기 전에 먼저 적용된다. 주문력 계수가 붙어있기 때문에 후반으로 갈수록 피해 감소 효과가 점점 증가하지만, 계수가 매우 낮은 편이어서 극딜 빌드를 올리더라도 피해 감소량은 10~13 정도에 그친다. 그리고 피즈의 주문력이 높고 상대가 입히는 피해량이 아무리 낮아도 상대가 입히는 피해량을 50% 넘게 깎지는 못한다. 극딜 트리를 탈 때 적의 딜을 버티는 것에 소소하게 도움을 준다는 정도로 보면 된다. 도트 피해를 입히는 스킬에 대해서는 매 틱마다 피해 감소 효과가 적용되므로 높은 효율을 보여준다. 또한 일부 적중 시 효과처럼 물리 피해와 마법 피해를 한 번에 입히는 혼합 피해에 대해서도 패시브가 물리 피해와 마법 피해에 각각 적용되기 때문에 효율이 높다.
 
-<p>온힛 효과는 리치베인이나, W의 효과를 발생시킬 순 있지만 보통 Q를 쓴 대상에게는 접근하여서 이후 평타를 때릴 상황이 나오기에 그렇게 중요하지는 않은 편. 굳이 중요성을 따지면 집중 공격 룬의 스택을 쌓던가, W 액티브 효과와 리치베인 등을 전부 Q 한 방으로 즉시 발동시켜서 반응할 시간 없이 적을 처치하는 역할은 가능하다.
-</p>
-<p>
-Q를 사용하면서 스킬이나 아이템 사용이 가능하다. 돌진 중 W나 R은 물론이고, 점멸 같은 스펠도 사용할 수 있으며, 존야, 벨트, 총검도 사용이 가능하다. 하지만 E는 시전이 불가능하다.
-</p><p>
-후술할 W와 E에 비해 스킬 레벨을 투자하는 메리트가 적기 때문에 마지막으로 마스터한다.
-</p>
-</div>
-</div>
+    </p>
+  </div>
+  </div>
 </body>
 </html>
