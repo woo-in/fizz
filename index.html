@@ -1,40 +1,28 @@
 <!doctype html>
 <html>
 <head>
- <title> 피즈스킬분석 </title>
- <meta charset="utf-8">
- <style>
- h1{
-   font-size:60px;
-   text-align: center;
-   border-bottom:solid;
-   margin:0px;
- }
- a{
-   color:black;
- }
- .ed{
-   color:gray;
- }
- #now{
-   color:red;
- }
- </style>
+  <title> 피즈스킬분석 </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="Color.js"> </script>
 </head>
 
 <body>
-  <h1><a href="https://woo-in.github.io/fizz/index.html"id="now">피즈 스킬 분석</a></h1>
+
+
+  <h1><a href="https://woo-in.github.io/fizz/index.html"id="title1">피즈 스킬 분석 ! ! !</a></h1>
+
+
+  <div id="grid">
     <ul>
-      <li><u><a href="https://woo-in.github.io/fizz/1.html">P - 영리한 싸움꾼(Nimble Fighter)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/2.html">Q - 성게 찌르기(Urchin Strike)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/3.html">W - 심해석 삼지창(Seastone Trident)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/4.html">E - 장난치기(Playful)/재간둥이(Trickster)</a></u></li>
-      <li><u><a href="https://woo-in.github.io/fizz/5.html">R - 미끼 뿌리기(Chum the waters)</a></u></li>
+      <li><a href="https://woo-in.github.io/fizz/1.html"id="now">P - 영리한 싸움꾼(Nimble Fighter)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/2.html"class="notnow">Q - 성게 찌르기(Urchin Strike)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/3.html"class="notnow">W - 심해석 삼지창(Seastone Trident)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/4.html"class="notnow">E - 장난치기(Playful)/재간둥이(Trickster)</a></li>
+      <li><a href="https://woo-in.github.io/fizz/5.html"class="notnow">R - 미끼 뿌리기(Chum the waters)</a></li>
+      <input type="button" value="night" onclick="NightDayHander(this)">
     </ul>
-
-
-
-
-
+  </div>
 </body>
 </html>
+
